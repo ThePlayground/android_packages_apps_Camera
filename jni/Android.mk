@@ -11,6 +11,10 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_CFLAGS := -O3 -DNDEBUG
 
+ifeq ($(TARGET_SLIMER_CAM),true)
+    LOCAL_CFLAGS += -DSLIMER_CAM
+endif
+
 LOCAL_SRC_FILES := \
         feature_mos_jni.cpp \
         mosaic_renderer_jni.cpp \

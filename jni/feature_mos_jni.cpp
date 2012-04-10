@@ -355,8 +355,13 @@ void ConvertYVUAiToPlanarYVU(unsigned char *planar, unsigned char *in, int width
     for (int i = 0; i < planeSize; i++)
     {
         *Yptr++ = *in++;
+#ifdef SLIMER_CAM
+        *Vptr++ = *in++ + 128;
+        *Uptr++ = *in++ + 90;
+#else
         *Vptr++ = *in++;
         *Uptr++ = *in++;
+#endif
         in++;   // Alpha
     }
 }
