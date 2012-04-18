@@ -1294,8 +1294,7 @@ public class Camera extends ActivityBase implements FocusManager.Listener,
                 CameraSettings.KEY_PICTURE_FORMAT,
                 CameraSettings.KEY_EXTERNAL_STORAGE,
                 CameraSettings.KEY_PICTURE_SIZE,
-                CameraSettings.KEY_FOCUS_MODE,
-                CameraSettings.KEY_FORCE_PREVIEW};
+                CameraSettings.KEY_FOCUS_MODE};
 
         CameraPicker.setImageResourceId(R.drawable.ic_switch_photo_facing_holo_light);
         mIndicatorControlContainer.initialize(this, mPreferenceGroup,

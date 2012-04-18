@@ -534,7 +534,6 @@ public class VideoCamera extends ActivityBase
         final String[] OTHER_SETTING_KEYS = {
                     CameraSettings.KEY_RECORD_LOCATION,
                     CameraSettings.KEY_POWER_SHUTTER,
-                    CameraSettings.KEY_FORCE_PREVIEW,
                     CameraSettings.KEY_VOLUME_ZOOM,
                     CameraSettings.KEY_EXTERNAL_STORAGE};
 
