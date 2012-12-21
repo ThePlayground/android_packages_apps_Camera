@@ -966,7 +966,7 @@ public class PanoramaActivity extends ActivityBase implements
         if (jpegData != null) {
             String filename = PanoUtil.createName(
                     getResources().getString(R.string.pano_file_name_format), mTimeTaken);
-            Uri uri = Storage.addImage(getContentResolver(), mStorage, filename, mTimeTaken, null,
+            Uri uri = Storage.addImage(getContentResolver(), mStorage, filename, null, mTimeTaken, null,
                     orientation, jpegData, width, height);
             if (uri != null && orientation != 0) {
                 String filepath = Storage.generateFilepath(mStorage, filename);

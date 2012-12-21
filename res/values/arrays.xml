@@ -21,6 +21,13 @@
         <item>@string/pref_video_quality_entry_1080p</item>
         <item>@string/pref_video_quality_entry_720p</item>
         <item>@string/pref_video_quality_entry_480p</item>
+        <item>@string/pref_video_quality_entry_fwvga</item>
+        <item>@string/pref_video_quality_entry_wvga</item>
+        <item>@string/pref_video_quality_entry_vga</item>
+        <item>@string/pref_video_quality_entry_wqvga</item>
+        <item>@string/pref_video_quality_entry_CIF</item>
+        <item>@string/pref_video_quality_entry_QVGA</item>
+        <item>@string/pref_video_quality_entry_QCIF</item>
     </string-array>
 
     <string-array name="pref_video_quality_entryvalues" translatable="false">
@@ -30,12 +37,33 @@
         <item>@string/pref_video_quality_default</item>
         <!-- The integer value of CamcorderProfile.QUALITY_480P -->
         <item>4</item>
+        <!-- The integer value of CamcorderProfile.QUALITY_FWVGA -->
+        <item>11</item>
+        <!-- The integer value of CamcorderProfile.QUALITY_WVGA -->
+        <item>8</item>
+        <!-- The integer value of CamcorderProfile.QUALITY_VGA -->
+        <item>9</item>
+        <!-- The integer value of CamcorderProfile.QUALITY_WQVGA -->
+        <item>10</item>
+        <!-- The integer value of CamcorderProfile.QUALITY_CIF -->
+        <item>3</item>
+        <!-- The integer value of CamcorderProfile.QUALITY_QVGA -->
+        <item>7</item>
+        <!-- The integer value of CamcorderProfile.QUALITY_QCIF -->
+        <item>2</item>
     </string-array>
 
     <array name="video_quality_largeicons" translatable="false">
         <item>@drawable/ic_quality_1080p</item>
         <item>@drawable/ic_quality_720p</item>
         <item>@drawable/ic_quality_480p</item>
+        <item>@drawable/ic_menu_done_holo_light</item>
+        <item>@drawable/ic_menu_done_holo_light</item>
+        <item>@drawable/ic_menu_done_holo_light</item>
+        <item>@drawable/ic_menu_done_holo_light</item>
+        <item>@drawable/ic_quality_cif</item>
+        <item>@drawable/ic_quality_qvga</item>
+        <item>@drawable/ic_quality_qcif</item>
     </array>
 
     <!-- Video Preferences Time Lapse Frame Interval icons -->
@@ -177,6 +205,16 @@
         <item>facedetect</item>
         <item>continuous-picture</item>
     </string-array>
+
+    <!-- Camera Preferences Picture format dialog box entries -->
+ 	 <string-array name="pref_camera_picture_format_entries">
+        <item>@string/pref_camera_picture_format_entry_jpeg</item>
+        <item>@string/pref_camera_picture_format_entry_raw</item>
+ 	 </string-array>
+ 	 <string-array name="pref_camera_picture_format_entryvalues">
+        <item>@string/pref_camera_picture_format_value_jpeg</item>
+        <item>@string/pref_camera_picture_format_value_raw</item>
+ 	 </string-array>
 
     <!-- Camera Preferences ISO dialog box entries -->
     <string-array name="pref_camera_iso_entries" translatable="false">

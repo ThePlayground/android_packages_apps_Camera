@@ -40,10 +40,21 @@ public class Storage {
 
     private static final int BUFSIZE = 4096;
 
-    public static Uri addImage(ContentResolver resolver, String storage, String title, long date,
+    public static Uri addImage(ContentResolver resolver, String storage, String title, String pictureFormat, long date,
                 Location location, int orientation, byte[] jpeg, int width, int height) {
         // Save the image.
-        String path = generateFilepath(storage, title);
+        //String path = generateFilepath(storage, title);
+        String ext = null;
+        if (pictureFormat == null || pictureFormat.equalsIgnoreCase("jpeg"))
+        {
+            ext = ".jpg";
+        } else if (pictureFormat.equalsIgnoreCase("raw")) {
+            ext = ".raw";
+        } else {
+            Log.e(TAG, "Invalid pictureFormat " + pictureFormat);
+            return null;
+        }
+        String path = generateDirectory(storage) + '/' + title + ext;
         FileOutputStream out = null;
         try {
             out = new FileOutputStream(path);
@@ -61,7 +72,7 @@ public class Storage {
         // Insert into MediaStore.
         ContentValues values = new ContentValues(9);
         values.put(ImageColumns.TITLE, title);
-        values.put(ImageColumns.DISPLAY_NAME, title + ".jpg");
+        values.put(ImageColumns.DISPLAY_NAME, title + "." + ext);
         values.put(ImageColumns.DATE_TAKEN, date);
         values.put(ImageColumns.MIME_TYPE, "image/jpeg");
         values.put(ImageColumns.ORIENTATION, orientation);

@@ -114,6 +114,20 @@
     <string name="pref_video_quality_entry_720p" translatable="false">HD</string>
     <!-- Video quality setting entry. Videos will be recorded in 480p quality. [CHAR LIMIT=24] -->
     <string name="pref_video_quality_entry_480p" translatable="false">SD</string>
+    <!-- Video quality setting entry. Videos will be recorded in FWVGA quality. [CHAR LIMIT=24] -->
+    <string name="pref_video_quality_entry_fwvga" translatable="false">FWVGA</string>
+    <!-- Video quality setting entry. Videos will be recorded in WVGA quality. [CHAR LIMIT=24] -->
+    <string name="pref_video_quality_entry_wvga" translatable="false">WVGA</string>
+    <!-- Video quality setting entry. Videos will be recorded in VGA quality. [CHAR LIMIT=24] -->
+    <string name="pref_video_quality_entry_vga" translatable="false">VGA</string>
+    <!-- Video quality setting entry. Videos will be recorded in WQVGA quality. [CHAR LIMIT=24] -->
+    <string name="pref_video_quality_entry_wqvga" translatable="false">WQVGA</string>
+    <!-- Video quality setting entry. Videos will be recorded in CIF quality. [CHAR LIMIT=24] -->
+    <string name="pref_video_quality_entry_CIF" translatable="false">CIF</string>
+    <!-- Video quality setting entry. Videos will be recorded in QVGA quality. [CHAR LIMIT=24] -->
+    <string name="pref_video_quality_entry_QVGA" translatable="false">QVGA</string>
+    <!-- Video quality setting entry. Videos will be recorded in QCIF quality. [CHAR LIMIT=24] -->
+    <string name="pref_video_quality_entry_QCIF" translatable="false">QCIF</string>
 
     <!-- Describes the preference dialog for choosing interval between frame capture for
     time lapse recording. Appears at top of the dialog. [CHAR LIMIT=30] -->
@@ -191,6 +205,17 @@
     <string name="pref_camera_focusmode_entry_fixed">Fixed</string>
     <string name="pref_camera_focusmode_entry_facedetect">Face detect</string>
     <string name="pref_camera_focusmode_entry_continuouspicture">Continuous Picture</string>
+
+    <!-- Default Picture format setting. Do not translate. -->
+    <string name="pref_camera_picture_format_default">jpeg</string>
+    <!-- Settings screen, Select Picture format title -->
+    <string name="pref_camera_picture_format_title">Select Picture Format</string>
+    <!-- Settings screen, picture format dialog radio button choices -->
+    <string name="pref_camera_picture_format_entry_jpeg">Jpeg</string>
+    <string name="pref_camera_picture_format_entry_raw">Raw</string>
+    <!-- Picture format entry values. Do not translate. -->
+    <string name="pref_camera_picture_format_value_jpeg">jpeg</string>
+    <string name="pref_camera_picture_format_value_raw">raw</string>
 
     <!-- Default ISO setting. Do not translate. -->
     <string name="pref_camera_iso_default">auto</string>
